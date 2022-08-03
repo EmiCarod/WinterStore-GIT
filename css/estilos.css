@@ -1,0 +1,295 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/*Selector Universal*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Medidas*/
+html{
+    font-size: 25px;
+    font-family:'Oswald', sans-serif;
+    background-image: url('../recursos/img/fondo\ copos\ nieve.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main{
+    margin-left: 10px;
+}
+
+.fonts-destacados{
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+#footer{
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px   20px;
+    background-color: black;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+}
+.video-if{
+    margin-left: 20px;
+}
+
+/*Metodologia BEM*/
+.caja{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+
+}
+.cont{
+    width: 600px;
+}
+
+.cont__img{
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cont__texto{
+    margin-bottom: 20px;
+}
+.cont__titulo{
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.cont__parrafo{
+    max-width: 90%;
+    line-height: 20px;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+/*Segundo bloque*/
+.boton{
+    border-color: black;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Oswal', sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+}
+/*navegador con flexbox*/
+.header-menu{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.nav__list{
+    display: flex;
+    list-style-type: none;
+}
+.nav__list .lista__links{
+    padding: 0 15px;
+}
+.botonContacto{
+    border: none;
+}
+.botonContacto a{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: black;
+}
+
+.ancord-list{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.grid-contenedor{
+    font-family: 'Gentium Book Plus', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    justify-items: center;
+    align-items: center;
+
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "head   head    head"
+    "lineaN     lineaNo     lineaB"
+    "lineaN     lineaNo     lineaB"
+    ;
+    gap: 10px;
+
+}
+
+.punto{
+    display: flex;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.puntoImg{
+    grid-area: head;
+}
+
+.puntoNope{
+    grid-area: lineaN;
+}
+
+.puntoNorth{
+    grid-area: lineaNo;
+}
+
+.puntoBurton{
+    grid-area: lineaB;
+}
+
+.grid-cont{
+    font-family: 'Gentium Book Plus', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    justify-items: center;
+    align-items: center;
+
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas:
+    "t1     t1      t1      t1"
+    "t2     t2      t3      t3"
+    "t5     t5      t6      t6"
+    "t7     t7      t7      t7"
+    "t8     t8      t8      t8"
+    ;
+    gap: 10px;
+}
+
+.tip{
+    display: flex;
+
+    font-size: 18px;
+    padding: 20px;
+    
+}
+
+.tip1{
+    grid-area: t1;
+}
+
+.tip2{
+    grid-area: t2;
+}
+
+.tip3{
+    grid-area: t3;
+}
+
+
+.tip5{
+    grid-area: t5;
+}
+
+.tip6{
+    grid-area: t6;
+}
+
+.tip7{
+    grid-area: t7;
+}
+
+.tip8{
+    grid-area: t8;
+}
+
+.grid-contTablas{
+    font-family: 'Gentium Book Plus', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    justify-items: center;
+    align-items: center;
+
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "tabla1     tabla1      tabla1"
+    "tabla2     tabla2      tabla2"
+    ;
+}
+
+.tabla{
+    display: flex;
+    font-size: 18px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.tabla1{
+    grid-area: tabla1;
+}
+
+.tabla2{
+    grid-area: tabla2;
+}
+
+/*grids mobile*/
+@media (max-width: 576px) {
+    
+    .grid-contenedor{
+        font-family: 'Gentium Book Plus', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+    
+        width: 90%;
+        height: 600px;
+        margin: 40px auto;
+    
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "head"
+        "lineaN"
+        "lineaNo"
+        "lineaB"
+        ;
+        gap: 10px;
+    }
+    .header-menu{
+        display: none;
+    }
+}
+
+/*grids mobile*/
+@media (max-width: 768px) {
+
+}
