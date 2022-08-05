@@ -9,7 +9,7 @@
 }
 /*Medidas*/
 html{
-    font-size: 25px;
+    font-size: 20px;
     font-family:'Oswald', sans-serif;
     background-image: url('../recursos/img/fondo\ copos\ nieve.jpg');
     background-position: center;
@@ -182,8 +182,6 @@ nav ul li a{
     "t1     t1      t1      t1"
     "t2     t2      t3      t3"
     "t5     t5      t6      t6"
-    "t7     t7      t7      t7"
-    "t8     t8      t8      t8"
     ;
     gap: 10px;
 }
@@ -217,13 +215,6 @@ nav ul li a{
     grid-area: t6;
 }
 
-.tip7{
-    grid-area: t7;
-}
-
-.tip8{
-    grid-area: t8;
-}
 
 .grid-contTablas{
     font-family: 'Gentium Book Plus', sans-serif;

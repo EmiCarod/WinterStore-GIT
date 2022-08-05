@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     <!--Icono de la pagina-->
     <link rel="shortcut icon" href="./recursos/img/snowboard.png" type="image/x-icon">
     <!--Hoja de estilos Manera Externa-->
@@ -28,41 +32,48 @@
             
         </ul>
     </nav>
-    <button class="botonContacto" >
+    <button type="button" class="botonContacto">
         <a class="ancord-list" href="./paginas/contacto.html">contacto</a>
     </button>
     </header>
+
     <main id="index">
-        <section class="grid-cont" >
-            <article class="tip tip1" >
-                <h1>Productos Mas Destacados</h1>
-            </article>
-            <article class="tip tip2">
-                <h4>Los 3 Mas Vendidos</h4>
-            </article>
-            <article class="tip tip3">
+    
+        <div class="container text-center mt-3 mb-6">
+        <div class="row">
+            <div class="col col-md-12">
+                <p>Productos Mas Destacados</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12">
+                <p>Los 3 Mas Vendidos</p>
                 <ol>
                     <li>Campera H&H</li>
                     <li>Tabla Burton Snow</li>
-                    <li>campera de north face</li>
+                    <li>campera de north face</li>                    
                 </ol>
-            </article>
-            <article class="tip tip5" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-6">
                 <p class="fonts-destacados">Linea North Face</p>
                 <!--Imagen de los Articulos-->
-                <button>Ver Mas</button>
-            </article>
-
-            <article class="tip tip6">
+                <button class="btn btn-info">Ver Mas</button>
+            </div>
+            <div class="col col-md-6">
                 <p class="fonts-destacados">Linea Burton</p>
                 <!--Imagen de los Articulos-->
-                <button>Ver Mas</button>
-            </article>
-            <article class="tip tip7" >
+                <button class="btn btn-info">Ver Mas</button>
+            </div>
+        </div>
+    </div>
+
+            <article>
             <!--Video Iframe-->
                 <h2>Video de North Face</h2>
             </article>
-            <article class="tip tip8">
+            <article>
                 <p>Video ilustrativo de la marca North Face </p>
                 <iframe class="video-if" width="560" height="315" src="https://www.youtube.com/embed/8HvWxwZWPJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
