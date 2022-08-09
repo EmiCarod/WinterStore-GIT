@@ -8,13 +8,14 @@
     box-sizing: border-box;
 }
 /*Medidas*/
-html{
+.html{
     font-size: 20px;
     font-family:'Oswald', sans-serif;
     background-image: url('../recursos/img/fondo\ copos\ nieve.jpg');
     background-position: center;
     background-size: cover;
 }
+
 main{
     margin-left: 10px;
 }
@@ -58,9 +59,23 @@ nav ul li a{
     height: 200px;
     border-radius: 15px;
     padding: 10px;
+
+}
+
+.cont__img-index{
+    height: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
 }
 .cont__texto{
     margin-bottom: 20px;
+}
+.cont__item{
+    font-family: 'Oswald', serif;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .cont__titulo{
     font-family: 'Gentium Book Plus', serif;
@@ -117,6 +132,21 @@ nav ul li a{
     text-decoration: none;
 }
 
+.cont__hombres{
+    margin-bottom: 20px;
+}
+.cont__index{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/*
 .grid-contenedor{
     font-family: 'Gentium Book Plus', sans-serif;
     font-size: 20px;
@@ -252,7 +282,7 @@ nav ul li a{
     grid-area: tabla2;
 }
 
-/*grids mobile*/
+/*grids mobile
 @media (max-width: 576px) {
     
     .grid-contenedor{
@@ -280,7 +310,8 @@ nav ul li a{
     }
 }
 
-/*grids mobile*/
+/*grids mobile
 @media (max-width: 768px) {
 
 }
+*/
