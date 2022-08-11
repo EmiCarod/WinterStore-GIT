@@ -1,32 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+/*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-header {
-  font-family: oswald;
-  color: whitesmoke;
-  font-size: 25px;
-}
-
-p {
-  font-size: 22px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-main h2 {
-  font-family: Gentium Book Plus;
-}
-main p {
-  font-family: Gentium Book Plus;
-}
-
-li {
-  list-style-type: none;
-}
-
-/*Fonts*/
 /*Selector Universal*/
 * {
   margin: 0%;
@@ -100,7 +74,7 @@ nav ul li a {
 }
 
 .cont__item {
-  font-family: Gentium Book Plus;
+  font-family: "Oswald", serif;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -342,6 +316,4 @@ nav ul li a {
 @media (max-width: 768px) {
 
 }
-*/
-
-/*# sourceMappingURL=estilos.css.map */
+*//*# sourceMappingURL=estilos.css.map */

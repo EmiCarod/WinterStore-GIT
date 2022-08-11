@@ -1,178 +1,188 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-header {
-  font-family: oswald;
-  color: whitesmoke;
-  font-size: 25px;
+@import "fonts";
+@import "colores";
+@import "medidas";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+header{
+    font-family: $font-menu;
+    color: $color-menu;
+    font-size: $medida-menu;
 }
 
-p {
-  font-size: 22px;
+p{
+    font-size: $medidas-p;
 }
 
-h2 {
-  font-size: 24px;
+h2{
+    font-size: $medidas-h2;
 }
 
-main h2 {
-  font-family: Gentium Book Plus;
-}
-main p {
-  font-family: Gentium Book Plus;
+main{
+    h2{
+        font-family: $font-items;
+    }
+    p{
+        font-family: $font-items
+    }
 }
 
-li {
-  list-style-type: none;
+li{
+    list-style-type: none;
 }
+
+
+
+
+
+
 
 /*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 /*Selector Universal*/
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-
 /*Medidas*/
-.html {
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  background-image: url("../recursos/img/fondo copos nieve.jpg");
-  background-position: center;
-  background-size: cover;
+.html{
+    font-size: 20px;
+    font-family:'Oswald', sans-serif;
+    background-image: url('../recursos/img/fondo\ copos\ nieve.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-main {
-  margin-left: 10px;
+main{
+    margin-left: 10px;
 }
 
-.fonts-destacados {
-  font-family: "Gentium Book Plus", serif;
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.fonts-destacados{
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+#footer{
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px   20px;
+    background-color: black;
+
 }
 
-#footer {
-  width: 100%;
-  background-color: black;
-  color: whitesmoke;
-  padding: 20px 20px;
-  background-color: black;
+nav ul li a{
+    text-decoration: none;
+    
 }
-
-nav ul li a {
-  text-decoration: none;
-}
-
-.video-if {
-  margin-left: 20px;
+.video-if{
+    margin-left: 20px;
 }
 
 /*Metodologia BEM*/
-.caja {
-  max-width: 500px;
-  width: 100%;
-  margin-left: 20px;
+.caja{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+
+}
+.cont{
+    width: 600px;
 }
 
-.cont {
-  width: 600px;
+.cont__img{
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+
 }
 
-.cont__img {
-  height: 200px;
-  border-radius: 15px;
-  padding: 10px;
+.cont__img-index{
+    height: 150px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
 }
-
-.cont__img-index {
-  height: 150px;
-  border-radius: 15px;
-  padding: 10px;
-  background-color: cadetblue;
-  margin-bottom: 10px;
+.cont__texto{
+    margin-bottom: 20px;
 }
-
-.cont__texto {
-  margin-bottom: 20px;
+.cont__item{
+    font-family: $font-items;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-
-.cont__item {
-  font-family: Gentium Book Plus;
-  font-size: 20px;
-  text-transform: uppercase;
+.cont__titulo{
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 25px;
+    text-transform: uppercase;
 }
-
-.cont__titulo {
-  font-family: "Gentium Book Plus", serif;
-  font-size: 25px;
-  text-transform: uppercase;
+.cont__parrafo{
+    max-width: 90%;
+    line-height: 20px;
+    margin: 10px 0px;
+    font-size: 20px;
 }
-
-.cont__parrafo {
-  max-width: 90%;
-  line-height: 20px;
-  margin: 10px 0px;
-  font-size: 20px;
-}
-
 /*Segundo bloque*/
-.boton {
-  border-color: black;
-  border-radius: 15px;
-  font-size: 15px;
-  font-family: "Oswal", sans-serif;
-  cursor: pointer;
-  padding: 5px 10px;
-  background-color: black;
-  color: aliceblue;
-  text-decoration: none;
+.boton{
+    border-color: black;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Oswal', sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
 }
-
 /*navegador con flexbox*/
-.header-menu {
-  display: flex;
-  background-color: black;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.header-menu{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.nav__list{
+    display: flex;
+    list-style-type: none;
+}
+.nav__list .lista__links{
+    padding: 0 15px;
+}
+.botonContacto{
+    border: none;
+}
+.botonContacto a{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: black;
 }
 
-.nav__list {
-  display: flex;
-  list-style-type: none;
+.ancord-list{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.nav__list .lista__links {
-  padding: 0 15px;
+.cont__hombres{
+    margin-bottom: 20px;
+}
+.cont__index{
+    margin-bottom: 30px;
 }
 
-.botonContacto {
-  border: none;
-}
 
-.botonContacto a {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: goldenrod;
-  color: black;
-}
 
-.ancord-list {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-}
 
-.cont__hombres {
-  margin-bottom: 20px;
-}
 
-.cont__index {
-  margin-bottom: 30px;
-}
+
+
 
 /*
 .grid-contenedor{
@@ -249,7 +259,7 @@ nav ul li a {
 
     font-size: 18px;
     padding: 20px;
-
+    
 }
 
 .tip1{
@@ -312,16 +322,16 @@ nav ul li a {
 
 /*grids mobile
 @media (max-width: 576px) {
-
+    
     .grid-contenedor{
         font-family: 'Gentium Book Plus', sans-serif;
         font-size: 20px;
         text-transform: uppercase;
-
+    
         width: 90%;
         height: 600px;
         margin: 40px auto;
-
+    
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(4,auto);
@@ -343,5 +353,3 @@ nav ul li a {
 
 }
 */
-
-/*# sourceMappingURL=estilos.css.map */
