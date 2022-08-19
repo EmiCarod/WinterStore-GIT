@@ -1,8 +1,22 @@
 @import "fonts";
 @import "colores";
 @import "medidas";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+/*Funcion Mixin*/
+@mixin bordes () {
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    
+}
+.principal{
+    @include bordes();
+}
 header{
     font-family: $font-menu;
     color: $color-menu;
@@ -29,16 +43,18 @@ main{
 li{
     list-style-type: none;
 }
+/*Maps*/
+$estilos:(
+    estiloFuente: 'Oswald', sans-serif
+    tamañoF: 20px
+);
+
+.div-boton{
+    font-family: map-get($map: $estilos, $key: estiloFuente);
+    font-size: map-get($map: $estilos, $key: tamañoF );
+}
 
 
-
-
-
-
-
-/*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 /*Selector Universal*/
 *{
     margin: 0%;
@@ -116,15 +132,14 @@ nav ul li a{
     text-transform: uppercase;
 }
 .cont__titulo{
-    font-family: 'Gentium Book Plus', serif;
-    font-size: 25px;
-    text-transform: uppercase;
+    @extend .cont__item;
+
 }
 .cont__parrafo{
+    @extend .cont__item;
     max-width: 90%;
     line-height: 20px;
     margin: 10px 0px;
-    font-size: 20px;
 }
 /*Segundo bloque*/
 .boton{
