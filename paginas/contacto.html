@@ -36,84 +36,90 @@
         </button>
         
         </header>
-        <section>
-            <article>
-                <a href="../index.html">
-                    <img src="../recursos/img/snowboard.png" alt="logo-The WinterStore" width="100px">
-                </a>
-            </article>
-        </section>
-    <!--formulario-->
-    <form action="procesar.php" name="contacto" method="post">
-        <fieldset>
-            <legend>
-                ¡Saludanos!
-            </legend>
-            <div>
-            <label>Nombre:
-                <input type="text" name="nombre" placeholder="Emiliano"
-                required>
-            </label>
-            </div>
-            <div>
-            <label>Apellido:
-                <input type="text" name="apellido" placeholder="Carod"
-                required>
-            </label>
-            </div>
-            <div>
-            <label>Email:
-                <input type="email" name="Correo Electronico" placeholder="emicarod@gmail.com"
-                required>
-            </label>
-            </div>
-            <div>
-            <label>contraseña:
-                <input type="password" name="contraseña">
-            </label>
-            </div>
-            <!--Radio-->
-            <h4>Sexo</h4>
-                <label for="sexo">Hombre</label>
-                <input type="radio" name="Sexo"
-                value="Hombre">
-                <label for="sexo">Mujer</label>
-                <input type="radio" name="Sexo"
-                value="Mujer">
-                <label for="sexo">Otro</label>
-                <input type="radio" name="Sexo"
-                value="Otro">
-            <h4>Linea</h4>
-            <div>
-                <label for="Linea">Burton</label>
-                <input type="checkbox" name="Linea" value="Invierno">
-            </div>
-            <div>
-                <label for="Linea">Nope</label>
-                <input type="checkbox" name="Linea" value="Verano">
-            </div>
-            <div>
-                <label for="Linea">H&H</label>
-                <input type="checkbox" name="Linea" value="Verano">
-            </div>
-            <div>
-                <label for="Linea">Quiksilver</label>
-                <input type="checkbox" name="Linea" value="Verano">
-            </div>
+    <div class="container text-center mt-3 mb-6">
+        <div class="row">
+            <div class="col col-md-12">
+                <section>
+                    <article>
+                        <a href="../index.html">
+                            <img src="../recursos/img/snowboard.png" alt="logo-The WinterStore" width="100px">
+                        </a>
+                    </article>
+                </section>
+            <!--formulario-->
+            <form action="procesar.php" name="contacto" method="post">
+                <fieldset>
+                    <legend>
+                        ¡Saludanos!
+                    </legend>
+                    <div class="cont__hombres">
+                    <label>Nombre:
+                        <input type="text" name="nombre" placeholder="Emiliano"
+                        required>
+                    </label>
+                    </div>
+                    <div class="cont__hombres">
+                    <label>Apellido:
+                        <input type="text" name="apellido" placeholder="Carod"
+                        required>
+                    </label>
+                    </div>
+                    <div class="cont__hombres">
+                    <label>Email:
+                        <input type="email" name="Correo Electronico" placeholder="emicarod@gmail.com"
+                        required>
+                    </label>
+                    </div>
+                    <div class="cont__hombres">
+                    <label>contraseña:
+                        <input type="password" name="contraseña">
+                    </label>
+                    </div>
+                    <!--Radio-->
+                    <div class="cont__hombres">
+                    <h4>Sexo</h4>
+                        <label class="cont__btn" for="sexo">Hombre</label>
+                        <input type="radio" name="Sexo"
+                        value="Hombre">
+                        <label class="cont__btn" for="sexo">Mujer</label>
+                        <input type="radio" name="Sexo"
+                        value="Mujer">
+                        <label class="cont__btn" for="sexo">Otro</label>
+                        <input type="radio" name="Sexo"
+                        value="Otro">
+                    </div>
+                    <h4>Linea</h4>
+                    <div class="cont__hombres">
+                        <label class="cont__btn" for="Linea">Burton</label>
+                        <input type="checkbox" name="Linea" value="Burton">
+                    
+                        <label class="cont__btn" for="Linea">Dope</label>
+                        <input type="checkbox" name="Linea" value="Dope">
+                    
+                        <label class="cont__btn" for="Linea">H&H</label>
+                        <input type="checkbox" name="Linea" value="H&H">
+                    
+                        <label class="cont__btn" for="Linea">Quiksilver</label>
+                        <input type="checkbox" name="Linea" value="Quiksilver">
+                    </div>
 
-            <!--Comentario-->
+                    <!--Comentario-->
 
-            <h4>Dejanos tu comentario</h4>
-            <div>
-            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    <h4>Dejanos tu comentario</h4>
+                    <div class="cont__hombres">
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="cont__hombres">
+                    <!--Botones-->
+                    <button class="btn btn-info" type="submit">Enviar</button>
+                    <button class="btn btn-info" type="reset">Borrar Fromlario</button>
+                    <button class="btn btn-info" type="button">Sin Accion</button>
+                    </div>
+                </fieldset>
+            </form>
             </div>
-
-            <!--Botones-->
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar Fromlario</button>
-            <button type="button">Sin Accion</button>
-        </fieldset>
-    </form>
+        </div>
+    </div>
     <!--Pie de pagina-->
     <footer id="footer">
         <article>
