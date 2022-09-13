@@ -14,27 +14,43 @@
     <title>Tablas</title>
 </head>
 <body>
-    <!--Navegador con flexbox-->
-    <header class="header-menu" >
-        <div>
-            <a class="ancord-list" href="../index.html">Inicio</a>
-        </div>
-    <nav>
-        <!--navegador de pagina-->
-        <!--lista desordenada-->
-        <ul class="nav__list" >
-            <li class="lista__links" > <a class="ancord-list" href="./hombres.html">Hombres</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="#footer">Tablas</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="./mujeres.html">Mujeres</a> </li>
-            
-        </ul>
-    </nav>
-    <button class="botonContacto" >
-        <a class="ancord-list" href="./contacto.html">contacto</a>
-    </button>
-
+    <header>
+        <!--Navegador con Boostraps-->
+        <nav class="navbar navbar-expand-lg p-2" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./hombres.html">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./mujeres.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tablas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tablas.html">Burton</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">Nitro</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">DC</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main id="tablas22">
@@ -47,7 +63,7 @@
                             <!--Primer bloque-->
                             <article>
                                 <h1 class="produccion">Nosotros Producimos</h1>
-                                <img class="cont__img" src="../recursos/img/46671.jpg" alt="Produccion-Propia">
+                                <img class="cont__img" src="../recursos/img/tabla burton.jpg" alt="Produccion-Propia">
                             </article>
                             <article>
                                 <h3 class="cont__titulo" >Tabla Alta Gama</h3>

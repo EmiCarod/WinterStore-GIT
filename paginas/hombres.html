@@ -14,71 +14,131 @@
     <title>Hombres</title>
 </head>
 <body>
-    <!--Navegador con flexbox-->
-    <header class="header-menu" >
-        <div>
-            <a class="ancord-list" href="../index.html">Inicio</a>
-        </div>
-    <nav>
-        <!--navegador de pagina-->
-        <!--lista desordenada-->
-        <ul class="nav__list" >
-            <li class="lista__links" > <a class="ancord-list" href="#footer">Hombres</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="../paginas/tablas.html">Tablas</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="./mujeres.html">Mujeres</a> </li>
-            
-        </ul>
-    </nav>
-    <button class="botonContacto" >
-        <a class="ancord-list" href="./contacto.html">contacto</a>
-    </button>
-
+    <header>
+        <!--Navegador con Boostraps-->
+        <nav class="navbar navbar-expand-lg p-2" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#footer">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./mujeres.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tablas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tablas.html">Burton</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">Nitro</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">DC</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
+
+
     <main id="hombres22">
         <div class="container text-center mt-3 mb-6">
             <div class="row cont__hombres">
                 <div class="col col-md-12">
                 <section>
-                <!--Primer bloque-->
-                <article class="punto puntoImg" >
-                    <h1 class="cont__titulo">Camperas</h1>
-                    <img class="cont__img img-rounded" src="../recursos/img/snowboard.png" alt="logo WinterStore">
-                </div>
-                <div class="row">
-                    <div class="col col-md-4">
-                    </article>
-                    <article>
-                        <p class="fonts-destacados">Linea Dope</p>
-                        <!--Imagen de los Articulos-->
-                        <img src="../recursos/img/Campera dope.jpg" class="img-rounded cont__img" alt="Campera dope">
-                        <div>
+                        <!--Primer bloque-->
+                        <article class="punto puntoImg" >
+                            <h1 class="cont__titulo">Camperas</h1>
+                            <img class="cont__img img-rounded" src="../recursos/img/snowboard.png" alt="logo WinterStore">
+                            </div>
+                        </article>
+                            <div class="row">
+                            <div class="col col-md-4">
+                        <article>
+                            <p class="fonts-destacados">Linea Dope</p>
+                            <!--Imagen de los Articulos-->
+                            <img src="../recursos/img/Campera dope.jpg" class="img-rounded cont__img" alt="Campera dope">
+                            <div>
+                                <button class="btn btn-info">Ver Mas</button>
+                            </div>
+                        </article>
+                            </div>
+                            <div class="col col-md-4">    
+                        <article>
+                            <p class="fonts-destacados">Linea North Face</p>
+                                <!--Imagen de los Articulos-->
+                                <img src="../recursos/img/campera NorthF.webp" class="img-rounded cont__img" alt="campera north face">
+                                <div>
+                                    <button class="btn btn-info">Ver Mas</button>
+                                </div>
+                        </article>
+                            </div>
+                            <div class="col col-md-4">
+                        <article>
+                            <p class="fonts-destacados">Linea Burton</p>
+                            <!--Imagen de los Articulos-->
+                            <img src="../recursos/img/campera burton.jpg" class="img-rounded cont__img" alt="campera burton">
+                            <div>
+                                <button class="btn btn-info">Ver Mas</button>
+                            </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container text-center mt-3 mb-6">
+            <div class="row cont__hombres">
+                <div class="col col-md-12">
+                <section>
+                    <!--Primer bloque-->
+                        <h1 class="fonts-destacados">Pantalones</h1>
+                        </div>
+                        <div class="row">
+                        <div class="col col-md-4">
+                        <article>
+                            <p class="fonts-destacados">Linea Dope</p>
+                            <!--Imagen de los Articulos-->
+                            <img src="../recursos/img/Campera dope.jpg" class="img-rounded cont__img" alt="Campera dope">
+                            <div>
+                                <button class="btn btn-info">Ver Mas</button>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="col col-md-4">    
+                        <article>
+                        <p class="fonts-destacados">Linea North Face</p>
+                            <!--Imagen de los Articulos-->
+                            <img src="../recursos/img/campera NorthF.webp" class="img-rounded cont__img" alt="campera north face">
+                            <div>
                             <button class="btn btn-info">Ver Mas</button>
+                            </div>
+                        </article>
                         </div>
-                    </article>
-                    </div>
-                    <div class="col col-md-4">    
-                    <article>
-                    <p class="fonts-destacados">Linea North Face</p>
-                        <!--Imagen de los Articulos-->
-                        <img src="../recursos/img/campera NorthF.webp" class="img-rounded cont__img" alt="campera north face">
-                        <div>
-                        <button class="btn btn-info">Ver Mas</button>
+                        <div class="col col-md-4">
+                        <article>
+                            <p class="fonts-destacados">Linea Burton</p>
+                            <!--Imagen de los Articulos-->
+                            <img src="../recursos/img/campera burton.jpg" class="img-rounded cont__img" alt="campera burton">
+                            <div>
+                            <button class="btn btn-info">Ver Mas</button>
+                            </div>
+                        </article>
                         </div>
-                    </article>
                     </div>
-                    <div class="col col-md-4">
-                    <article>
-                        <p class="fonts-destacados">Linea Burton</p>
-                        <!--Imagen de los Articulos-->
-                        <img src="../recursos/img/campera burton.jpg" class="img-rounded cont__img" alt="campera burton">
-                        <div>
-                        <button class="btn btn-info">Ver Mas</button>
-                        </div>
-                    </article>
-                    </div>
-                </div>
                 </section>
             </div>
         </div>

@@ -14,112 +14,86 @@
     <title>Contacto</title>
 </head>
 <body>
-        <!--Navegador con flexbox-->
-        <header class="header-menu" >
-            <div>
-                <a class="ancord-list" href="../index.html">Inicio</a>
-            </div>
-        <nav>
-            <!--navegador de pagina-->
-            <!--lista desordenada-->
-            <ul class="nav__list" >
-                <li class="lista__links" > <a class="ancord-list" href="./hombres.html">Hombres</a> </li>
-                
-                <li class="lista__links" > <a class="ancord-list" href="./tablas.html">Tablas</a> </li>
-                
-                <li class="lista__links" > <a class="ancord-list" href="./mujeres.html">Mujeres</a> </li>
-                
-            </ul>
-        </nav>
-        <button class="botonContacto" >
-            <a class="ancord-list" href="./contacto.html">contacto</a>
-        </button>
-        
-        </header>
-    <div class="container text-center mt-3 mb-6">
-        <div class="row">
-            <div class="col col-md-12">
-                <section>
-                    <article>
-                        <a href="../index.html">
-                            <img src="../recursos/img/snowboard.png" alt="logo-The WinterStore" width="100px">
+    <header>
+        <!--Navegador con Boostraps-->
+        <nav class="navbar navbar-expand-lg p-2" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./hombres.html">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./mujeres.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tablas
                         </a>
-                    </article>
-                </section>
-            <!--formulario-->
-            <form action="procesar.php" name="contacto" method="post">
-                <fieldset>
-                    <legend>
-                        ¡Saludanos!
-                    </legend>
-                    <div class="cont__hombres">
-                    <label>Nombre:
-                        <input type="text" name="nombre" placeholder="Emiliano"
-                        required>
-                    </label>
-                    </div>
-                    <div class="cont__hombres">
-                    <label>Apellido:
-                        <input type="text" name="apellido" placeholder="Carod"
-                        required>
-                    </label>
-                    </div>
-                    <div class="cont__hombres">
-                    <label>Email:
-                        <input type="email" name="Correo Electronico" placeholder="emicarod@gmail.com"
-                        required>
-                    </label>
-                    </div>
-                    <div class="cont__hombres">
-                    <label>contraseña:
-                        <input type="password" name="contraseña">
-                    </label>
-                    </div>
-                    <!--Radio-->
-                    <div class="cont__hombres">
-                    <h4>Sexo</h4>
-                        <label class="cont__btn" for="sexo">Hombre</label>
-                        <input type="radio" name="Sexo"
-                        value="Hombre">
-                        <label class="cont__btn" for="sexo">Mujer</label>
-                        <input type="radio" name="Sexo"
-                        value="Mujer">
-                        <label class="cont__btn" for="sexo">Otro</label>
-                        <input type="radio" name="Sexo"
-                        value="Otro">
-                    </div>
-                    <h4>Linea</h4>
-                    <div class="cont__hombres">
-                        <label class="cont__btn" for="Linea">Burton</label>
-                        <input type="checkbox" name="Linea" value="Burton">
-                    
-                        <label class="cont__btn" for="Linea">Dope</label>
-                        <input type="checkbox" name="Linea" value="Dope">
-                    
-                        <label class="cont__btn" for="Linea">H&H</label>
-                        <input type="checkbox" name="Linea" value="H&H">
-                    
-                        <label class="cont__btn" for="Linea">Quiksilver</label>
-                        <input type="checkbox" name="Linea" value="Quiksilver">
-                    </div>
-
-                    <!--Comentario-->
-
-                    <h4>Dejanos tu comentario</h4>
-                    <div class="cont__hombres">
-                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="cont__hombres">
-                    <!--Botones-->
-                    <button class="btn btn-info" type="submit">Enviar</button>
-                    <button class="btn btn-info" type="reset">Borrar Fromlario</button>
-                    <button class="btn btn-info" type="button">Sin Accion</button>
-                    </div>
-                </fieldset>
-            </form>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tablas.html">Burton</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">Nitro</a></li>
+                            <li><a class="dropdown-item" href="./tablas.html">DC</a></li>
+                        </ul>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#footer">Contacto</a>
+                        </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
+        </nav>
+    </header>
+
+        <!--Formulario Bootstrap-->
+        <div class="container mt-3 mb-3">
+            <h3>¡Saludanos!</h3>
+            <form class="row g-3" >
+                <div class="col-6">
+                        <label for="correo-electronico" class="form-label">Email: </label>
+                        <input class="form-control" type="email" id="correo-electronico" placeholder="usuario@servidor.com" required>
+                </div>
+                <div class="col-6">
+                        <label for="pass" class="form-label">Contraseña: </label>
+                        <input class="form-control" type="password" id="pass" placeholder="ingrese su contraseña">
+                </div>
+                <div class="col-12">
+                    <label for="direccion01" class="form-label">Dirección: </label>
+                    <input class="form-control" type="text" id="direccion01" placeholder="Dirección">
+                </div>
+                <div class="col-6">
+                    <label for="ciudad" class="form-label">Ciudad: </label>
+                    <input class="form-control" type="text" id="ciudad" placeholder="Ciudad">
+                </div>
+                <div class="col-3">
+                    <label for="codigo-postal" class="form-label">Código Postal: </label>
+                    <input class="form-control" type="text" id="codigo-postal" placeholder="Código Postal">
+                </div>
+                <div class="col-3">
+                    <label for="pais" class="form-label">País: </label>
+                    <input class="form-control" type="text" id="pais" placeholder="pais" required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="terminos">
+                    <label for="terminos" class="form-check-label">Acepto los términos</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success">
+                        Enviar
+                    </button>
+                </div>
+            </form>
         </div>
-    </div>
     <!--Pie de pagina-->
     <footer id="footer">
         <article>

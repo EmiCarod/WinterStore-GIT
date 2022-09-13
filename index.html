@@ -18,28 +18,47 @@
     <title>The WinterStore</title>
 </head>
 <body>
-    <!--Navegador con flexbox-->
-    <header class="header-menu" >
-        <div>
-            <a class="ancord-list" href="#footer">Inicio</a>
-        </div>
-    <nav>
-        <!--navegador de pagina-->
-        <!--lista desordenada-->
-        <ul class="nav__list" >
-            <li class="lista__links" > <a class="ancord-list" href="./paginas/hombres.html">Hombres</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="./paginas/tablas.html">Tablas</a> </li>
-            
-            <li class="lista__links" > <a class="ancord-list" href="./paginas/mujeres.html">Mujeres</a> </li>
-            
-        </ul>
-    </nav>
-    <button type="button" class="botonContacto">
-        <a class="ancord-list" href="./paginas/contacto.html">contacto</a>
-    </button>
+    <header>
+        <!--Navegador con Boostraps-->
+        <nav class="navbar navbar-expand-lg p-2" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#footer">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"        aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/hombres.html">Hombre</a>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/mujeres.html">Mujeres</a>
+                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tablas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./paginas/tablas.html">Burton</a></li>
+                        <li><a class="dropdown-item" href="./paginas/tablas.html">Nitro</a></li>
+                        <li><a class="dropdown-item" href="./paginas/tablas.html">DC</a></li>
+                    </ul>
+                </li>
+        
+        
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-
+<!--contenido de la pagina-->
     <main>
         <div class="container text-center mt-3 mb-6">
             <section>
@@ -92,16 +111,15 @@
                     </div>
                 </div>
                 <div class="col col-md-4">
-                    <p class="fonts-destacados">Linea Dope</p>
+                    <p class="fonts-destacados">Linea DC</p>
                     <!--Imagen de los Articulos-->
-                        <img src="./recursos/img/logo Burton.png" class="img-rounded cont__img-index" alt="logo Burton" >
+                        <img src="./recursos/img/DC.png" class="img-rounded cont__img-index" alt="logo Burton" >
                         <div>
                             <button class="btn btn-info">Ver Mas</button>
                         </div>
                     </div>
             </div>
-        
-    
+
             <div class="row cont__index">
                 <div class="col col-md-12">
                     <article>
@@ -122,6 +140,11 @@
         <article>
         <h2>desarrollado por emiliano carod 
             cominsion numero 41165</h2>
+        </article>
+        <article class="redessociales">
+            <!--Iconos de redes-->
+            <!--Iconos de redes-->
+            <!--Iconos de redes-->
         </article>
     </footer>
 </body>
